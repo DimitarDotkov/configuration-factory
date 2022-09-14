@@ -24,4 +24,23 @@ class XmlConfigurationReaderTest {
         assertEquals(expected.getLogLevel(),actual.getLogLevel());
         assertEquals(expected.getLogFilePath(),actual.getLogFilePath());
     }
+
+    //REVIEW NOTES
+    @Test
+    void readFromFileReturnsCorrectConfiguration2() throws IOException, ConfigurationException {
+        ConfigSample.assertEquals(
+            new XmlConfigurationReader().readFromFile(fileName);
+        );
+    }
+}
+
+//REVIEW NOTES
+class ConfigSample {
+    static String expectedLevel = "WARN";
+    static String expectedPath = "C:/some/path/filename.log";
+
+    public static void assertEquals(Configuration cfg) {
+        assertEquals(expectedLevel, cfg.getLogLevel());
+        assertEquals(expectedPath, cfg.getLogFilePath());
+    }
 }

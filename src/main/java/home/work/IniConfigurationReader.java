@@ -15,3 +15,6 @@ public class IniConfigurationReader implements ConfigurationReader {
         return new Configuration(iniConfiguration.getSection("log").getProperty("LogPath").toString(),iniConfiguration.getSection("log").getProperty("LogLevel").toString());
     }
 }
+
+
+
