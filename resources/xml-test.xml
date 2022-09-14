@@ -1,0 +1,6 @@
+<configuration>
+    <log>
+        <path>C:\XML\TESTS\1</path>
+        <level>FINE</level>
+    </log>
+</configuration>
